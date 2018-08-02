@@ -2,23 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS1 HTML</title>
+    <title>Mafaca</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h1>Our project</h1>
-    <p>Каждый добавляет кнопку со своим номером, используя новую ветку.
-    И делаете Commit</p>
-    <hr>
-    <button data-button="*" class="number">*</button>
+    <h1 align="center">Our Calculator</h1>
+    <!--<div align="middle">-->
+        <!--Каждый добавляет кнопку со своим номером, используя новую ветку.-->
+    <!--И делаете Commit-->
+    <!--</div>-->
     <input type="text" id="result">
-    <hr>
-    <button class="button" id="2" value="2" onclick="toInput('2')">2</button>
-    <button class="button" id="3" value="3" onclick="toInput('3')">3</button>
-    <button class="button" id="6" value="6" onclick="toInput('6')">6</button>
-    <button data-button="8" class="number">8</button>
-    <button class="button" onclick="subtract()">Minus</button>
-    <button class="button" id="plus" value="+">+</button>
+
+    <button id="erase" class="signum" onclick="clearToInitialState()">C</button>
+    <table align="center">
+        <tr>
+            <th>
+                <button id="7" class="digit" onclick="toInput('7')">7</button>
+            </th>
+            <th>
+                <button id="8" class="digit" onclick="toInput('8')">8</button>
+            </th>
+            <th>
+                <button id="9" class="digit" onclick="toInput('9')">9</button>
+            </th>
+            <th>
+                <button id="div" class="signum" onclick="initAction('/')">/</button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button id="4" class="digit" onclick="toInput('4')">4</button>
+            </th>
+            <th>
+                <button id="5" class="digit" onclick="toInput('5')">5</button>
+            </th>
+            <th>
+                <button id="6" class="digit" onclick="toInput('6')">6</button>
+            </th>
+            <th>
+                <button id="mult" class="signum" onclick="initAction('*')">X</button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button id="1" class="digit" onclick="toInput('1')">1</button>
+            </th>
+            <th>
+                <button id="2" class="digit" onclick="toInput('2')">2</button>
+            </th>
+            <th>
+                <button id="3" class="digit" onclick="toInput('3')">3</button>
+            </th>
+            <th>
+                <button id="mins" class="signum" onclick="initAction('-')">-</button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <button id="0" class="digit" onclick="toInput('0')">0</button>
+            </th>
+            <th>
+                <button id="dot" class="signum" onclick="toInput('.')">.</button>
+            </th>
+            <th>
+                <button id="equal" class="signum" onclick="getResult()">=</button>
+            </th>
+            <th>
+                <button id="plus" class="signum" onclick="initAction('+')">+</button>
+            </th>
+        </tr>
+    </table>
     <script type class="application/javascript" src="script.js"></script>
 </body>
 </html>
