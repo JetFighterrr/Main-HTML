@@ -2,7 +2,7 @@ let cache, initialState, operand;
 clearCache();
 document.getElementById('result').value = '0';
 
-function toInput(id) {
+function toInput(inputParameter) {
   console.log(operand);
   console.log(initialState);
   let temp = document.getElementById('result').value;
@@ -10,8 +10,8 @@ function toInput(id) {
     clearValue();
     initialState = false;
   }
-  if (temp === '0') document.getElementById('result').value = id;
-  else document.getElementById('result').value += id;
+  if (temp === '0') document.getElementById('result').value = inputParameter;
+  else document.getElementById('result').value += inputParameter;
 }
 
 function toInputClean(id){
