@@ -3,8 +3,6 @@ clearCache();
 document.getElementById('result').value = '0';
 
 function toInput(inputParameter) {
-  console.log(operand);
-  console.log(initialState);
   let temp = document.getElementById('result').value;
   if (initialState) {
     clearValue();
