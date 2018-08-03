@@ -8,6 +8,7 @@ function toInput(inputParameter) {
     clearValue();
     initialState = false;
   }
+  if ( temp.includes('.') && inputParameter === '.' ) return;
   if (temp === '0') document.getElementById('result').value = inputParameter;
   else document.getElementById('result').value += inputParameter;
 }
