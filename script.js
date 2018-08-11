@@ -1,5 +1,7 @@
-let cache, initialState, operand;
-clearCache();
+let cache = 0,
+  initialState = true,
+  operand = null;
+// clearCache();
 document.getElementById('result').value = '0';
 
 function toInput(inputParameter) {

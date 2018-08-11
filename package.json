@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,12 @@
   "homepage": "https://github.com/iskotar/Main-HTML#readme",
   "devDependencies": {
     "eslint": "^5.2.0"
+  },
+  "dependencies": {
+    "jest": "^23.5.0"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node"
   }
 }
